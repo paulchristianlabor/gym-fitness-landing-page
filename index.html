@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--
+      Content-Security-Policy:
+      - default-src 'self'         — no unexpected origins
+      - script-src 'self'          — only same-origin scripts (Vite injects module scripts via <script type="module">)
+      - style-src 'self' 'unsafe-inline' fonts.googleapis.com — Tailwind inlines styles; Google Fonts CDN
+      - font-src fonts.gstatic.com — Google Fonts files
+      - img-src 'self' data: https: — local images + data URIs + HTTPS external images (e.g. DiceBear)
+      - connect-src 'self'         — no external fetch/XHR
+    -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self';"
+    />
+    <title>IronCore Fitness — Build Strength. Gain Confidence.</title>
+    <meta
+      name="description"
+      content="An elite training facility for those who demand results. No excuses, just iron and grit."
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
