@@ -52,8 +52,9 @@
               :key="feature"
               class="flex items-start gap-3"
             >
-              <CheckIcon
-                :class="['w-5 h-5 mt-0.5 shrink-0', tier.highlighted ? 'text-primary' : 'text-white/50']"
+              <font-awesome-icon
+                :icon="['fas', 'check']"
+                :class="['mt-0.5 shrink-0', tier.highlighted ? 'text-primary' : 'text-white/50']"
                 aria-hidden="true"
               />
               <span class="text-gray-300">{{ feature }}</span>
@@ -79,7 +80,7 @@
 </template>
 
 <script setup lang="ts">
-import { Check as CheckIcon } from 'lucide-vue-next'
+
 
 const tiers = [
   {

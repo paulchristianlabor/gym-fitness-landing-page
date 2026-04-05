@@ -47,8 +47,8 @@
         data-testid="nav-mobile-toggle"
         @click="isMobileMenuOpen = !isMobileMenuOpen"
       >
-        <XIcon v-if="isMobileMenuOpen" :size="28" />
-        <MenuIcon v-else :size="28" />
+        <font-awesome-icon v-if="isMobileMenuOpen" :icon="['fas', 'xmark']" class="w-7 h-7" />
+        <font-awesome-icon v-else :icon="['fas', 'bars']" class="w-7 h-7" />
       </button>
     </div>
 
@@ -89,7 +89,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
-import { Menu as MenuIcon, X as XIcon } from 'lucide-vue-next'
+
 
 const isScrolled = ref(false)
 const isMobileMenuOpen = ref(false)

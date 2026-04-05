@@ -45,7 +45,7 @@
             </p>
             <div class="flex items-center text-primary font-bold uppercase tracking-widest text-sm transform translate-y-8 opacity-0 transition-all duration-500 delay-100 group-hover:translate-y-0 group-hover:opacity-100">
               Learn More
-              <ArrowRightIcon class="ml-2 w-4 h-4" aria-hidden="true" />
+              <font-awesome-icon :icon="['fas', 'arrow-right']" class="ml-2" aria-hidden="true" />
             </div>
           </div>
         </div>
@@ -55,7 +55,7 @@
 </template>
 
 <script setup lang="ts">
-import { ArrowRight as ArrowRightIcon } from 'lucide-vue-next'
+
 
 const programs = [
   {

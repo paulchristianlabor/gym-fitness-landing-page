@@ -6,8 +6,8 @@
       <StatsSection />
       <ProgramsSection />
       <TrainersSection />
-      <TestimonialsSection />
       <PricingSection />
+      <TestimonialsSection />
       <CtaSection />
       <ContactSection />
     </main>

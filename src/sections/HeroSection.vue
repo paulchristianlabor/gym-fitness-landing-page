@@ -6,7 +6,7 @@
       <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,var(--tw-gradient-stops))] from-transparent via-background/80 to-background z-10" />
       <img
         src="/hero.png"
-        alt="IronCore Fitness Gym"
+        alt="Gym Fitness Gym"
         class="w-full h-full object-cover object-center scale-105"
       />
     </div>

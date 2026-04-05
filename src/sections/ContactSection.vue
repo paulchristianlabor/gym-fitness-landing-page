@@ -26,7 +26,7 @@
           <div>
             <h3 class="font-display text-3xl uppercase tracking-tight text-white mb-8">Find Us Here</h3>
             <p class="text-muted-foreground leading-relaxed mb-8">
-              IronCore Fitness is more than a gym — it's a community of dedicated athletes pushing each other to be
+              Gym Fitness is more than a gym — it's a community of dedicated athletes pushing each other to be
               better every single day.
             </p>
           </div>
@@ -34,7 +34,7 @@
           <div class="space-y-6">
             <div class="flex items-start gap-4">
               <div class="w-12 h-12 border border-primary/50 flex items-center justify-center shrink-0">
-                <MapPinIcon class="w-5 h-5 text-primary" aria-hidden="true" />
+                <font-awesome-icon :icon="['fas', 'location-dot']" class="w-5 h-5 text-primary" aria-hidden="true" />
               </div>
               <div>
                 <p class="font-semibold text-white uppercase tracking-wider text-sm mb-1">Location</p>
@@ -44,7 +44,7 @@
 
             <div class="flex items-start gap-4">
               <div class="w-12 h-12 border border-primary/50 flex items-center justify-center shrink-0">
-                <PhoneIcon class="w-5 h-5 text-primary" aria-hidden="true" />
+                <font-awesome-icon :icon="['fas', 'phone']" class="w-5 h-5 text-primary" aria-hidden="true" />
               </div>
               <div>
                 <p class="font-semibold text-white uppercase tracking-wider text-sm mb-1">Phone</p>
@@ -56,15 +56,15 @@
 
             <div class="flex items-start gap-4">
               <div class="w-12 h-12 border border-primary/50 flex items-center justify-center shrink-0">
-                <MailIcon class="w-5 h-5 text-primary" aria-hidden="true" />
+                <font-awesome-icon :icon="['fas', 'envelope']" class="w-5 h-5 text-primary" aria-hidden="true" />
               </div>
               <div>
                 <p class="font-semibold text-white uppercase tracking-wider text-sm mb-1">Email</p>
                 <a
-                  href="mailto:info@ironcorefitness.com"
+                  href="mailto:info@gymfitness.com"
                   class="text-muted-foreground hover:text-white transition-colors"
                 >
-                  info@ironcorefitness.com
+                  info@gymfitness.com
                 </a>
               </div>
             </div>
@@ -83,7 +83,7 @@
             class="h-full flex flex-col items-center justify-center text-center px-4 py-12 border border-primary/30 bg-primary/5"
             data-testid="contact-success"
           >
-            <CheckCircleIcon class="w-16 h-16 text-primary mb-4" aria-hidden="true" />
+            <font-awesome-icon :icon="['fas', 'circle-check']" class="w-16 h-16 text-primary mb-4" aria-hidden="true" />
             <h3 class="font-display text-2xl uppercase tracking-tight text-white mb-2">Message Received</h3>
             <p class="text-muted-foreground">We'll be in touch within 24 hours.</p>
           </div>
@@ -174,7 +174,6 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { MapPin as MapPinIcon, Phone as PhoneIcon, Mail as MailIcon, CheckCircle as CheckCircleIcon } from 'lucide-vue-next'
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
